@@ -1,38 +1,350 @@
-.App {
+h2 {
+  position: relative;
+  right: -550px;
+  font-size: 20px;
+}
+h3 {
+  position: relative;
+  bottom: -60px;
+}
+h5 {
+  position: relative;
+  bottom: -60px;
+}
+body {
+  display: block;
+  margin: 10px auto;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+ul {
+  margin-top: 70px;
+  margin-right: 15px;
+  font-size: large;
+  text-align: right;
+}
+ul li {
+  list-style: none;
+}
+button {
+  border-radius: 40px;
+  border: 1px solid hsl(251, 100%, 84%);
+  background-color: #231d3c;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 2px;
+  padding: 10px 18px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(68, 99, 134);
+  border: 1px solid rgb(68, 99, 134);
+  color: #fff;
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+.section-one {
+  border-right: 2px solid #537895;
+  padding-top: 20px;
+}
+.current-day {
+  position: relative;
+  top: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.container {
+  max-width: 1200px;
+  display: block;
+  margin: 50px auto;
+  background: linear-gradient(
+    180.3deg,
+    rgb(184, 183, 183) 5.5%,
+    rgb(76, 95, 112) 90.2%
+  );
+  border: 1px solid #537895;
+  border-radius: 10px;
+  opacity: 0.7;
+  transition: 200ms ease-in-out;
+}
+.container:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+}
+.heading {
   text-align: center;
+  margin: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading-one {
+  margin-bottom: 0px;
+  font-size: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading-two {
+  margin-top: 0px;
+  font-size: 55px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.active {
+  color: #09203f;
+}
+.search-btn {
+  border-radius: 40px;
+  border: 1px solid hsl(251, 100%, 84%);
+  background-color: #231d3c;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 2px;
+  padding: 10px 18px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+.search-btn:hover {
+  cursor: pointer;
+  background-color: rgb(68, 99, 134);
+  border: 1px solid rgb(68, 99, 134);
+  color: #fff;
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+.search-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 60px;
+  width: fit-content;
+  border: 1px solid #231d3c;
 }
-
-.App-link {
-  color: #61dafb;
+.search-bar #search {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: none;
+  text-align: left;
+  font-style: italic;
+  color: #231d3c;
 }
-
-@keyframes App-logo-spin {
+::placeholder {
+  color: #231d3c;
+}
+.date-time {
+  font-style: italic;
+}
+.icon {
+  position: relative;
+  top: -25px;
+}
+.details-link {
+  position: relative;
+  bottom: -100px;
+  left: 10px;
+}
+.country {
+  font-size: 22px;
+  font-weight: 500;
+}
+#weather-description {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#weather-description:first-letter {
+  text-transform: capitalize;
+}
+.weather-info-specific {
+  position: relative;
+  top: 60px;
+  font-size: 14px;
+}
+.temp-value-main {
+  font-size: 80px;
+}
+.degrees {
+  position: relative;
+  top: -43px;
+  left: -5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.degrees a {
+  text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 140px;
+  margin-bottom: 30px;
+  font-style: italic;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+}
+.forecast-day {
+  font-weight: 500;
+}
+.forecast-temp {
+  font-size: 13px;
+}
+.temp-min {
+  opacity: 0.6;
+}
+.link {
+  font-weight: 500;
+  text-align: right;
+  font-size: 13px;
+}
+.link a {
+  color: #3009dd;
+  text-decoration: none;
+}
+@keyframes move-background {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: translate3d(0px, 0px, 0px);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.background {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/457/original/black_sky.png?1689170749")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
+}
+
+@media (max-width: 700px) {
+  .temp-value-main {
+    font-size: 60px;
+    position: relative;
+    left: 70px;
+    top: 70px;
+  }
+  .celsius {
+    font-size: 16px;
+    position: relative;
+    left: 70px;
+    top: 80px;
+  }
+  .fahrenheit {
+    display: none;
+  }
+  .slash {
+    display: none;
+  }
+  .current-day {
+    font-size: 36px;
+    top: 170px;
+  }
+  .icon {
+    position: relative;
+    top: 170px;
+    left: -20px;
+  }
+  .weather-data {
+    position: relative;
+    top: 150px;
+  }
+  .heading {
+    position: relative;
+    left: -80px;
+    text-align: center;
+    border: 1px solid #231d3c;
+    border-radius: 5px;
+  }
+  .heading-one {
+    font-size: 20px;
+  }
+  .heading-two {
+    font-size: 40px;
+  }
+  .search-bar {
+    width: 180px;
+  }
+  ::placeholder {
+    font-size: 13px;
+  }
+  .search-btn {
+    position: relative;
+    left: -20px;
+  }
+  .current-weather-btn {
+    position: relative;
+    left: -20px;
+  }
+  .weather-info {
+    font-size: 13px;
+    margin-top: 80px;
+  }
+  .weather-info-specific {
+    font-size: 14px;
+  }
+  .form {
+    position: relative;
+    top: 140px;
+    left: -5px;
+  }
+  .details-link {
+    visibility: hidden;
+  }
+  .section-one {
+    border: hidden;
+  }
+  .container {
+    display: block;
+    margin: 15px auto;
+  }
+  .weather-forecast {
+    font-size: 12px;
+  }
+  .link {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
