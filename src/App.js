@@ -141,7 +141,7 @@ function App() {
       </div>
       <small className="link">
         <a
-          href="https://github.com/Multive018/my-weather-app"
+          href="https://github.com/Multive018/weather-app-react"
           target="_blank"
           rel="noreferrer"
         >
